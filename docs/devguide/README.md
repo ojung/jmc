@@ -84,3 +84,7 @@ Optional:
 If you have the spotbugs plug-in installed, you should also import the spotbugs excludes (configuration/spotbugs/spotbugs-exclude.xml). There is also a common dictionary (configuration/ide/eclipse/dictionary/dictionary.txt) and templates (configuration/ide/eclipse/templates/JMC templates.xml) which you may find useful.
 
 For dynamic working sets, see http://hirt.se/blog/?p=1149.
+
+## Running Core Unit Tests from Eclipse
+
+Tests are compiled to `target/classes` by maven. Since Eclipse compiles them to `target/test-classes` by default, you have to change the Output Folder manually for each `src/test/java` in the `missioncontrol.core.test` sub-modules. To do this right-click the test source folder `src/test/java`, click Build Path -> Configure Output Folder... and change `target/test-classes` to `target/classes`. After this, changes you make to tests should be respected when you run them with Run as -> JUnit test.
