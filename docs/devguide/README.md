@@ -4,11 +4,13 @@ This document explains how to get started developing JDK Mission Control in Ecli
 ## Getting Eclipse
 First of all you should download the latest version of Eclipse. JMC is an RCP application, and thus, the easiest way to make changes to it, is to use the Eclipse IDE.
 
-There are various Eclipse bundles out there. Get (at least) the Eclipse IDE for Eclipse Committers. It adds some useful things, like PDE (the Plugin Development Environment), Git, the Marketplace client and more. You can also use the Eclipse IDE for Java Enterprise Developers.
+There are various Eclipse bundles out there. Get (at least) the Eclipse IDE for RCP and RAP Developers. It adds some useful things, like PDE (the Plugin Development Environment), Git, the Marketplace client and more. You can also use the Eclipse IDE for Java Enterprise Developers.
 
 **You will need an Eclipse 2020-03 or later!**
 
 To get to the screen where you can select another packaging than the standard, click on the [Download Packages](https://www.eclipse.org/downloads/eclipse-packages) link on the Eclipse download page.
+
+> *HINT:* For mac users, Eclipse is also available on homebrew: `brew install eclipse-rcp`
 
 Install it, start it and create a new workspace for your JMC work. Creating a new workspace is as easy as picking a new name when starting up your Eclipse in the dialog asking for a directory for the workspace:
 
